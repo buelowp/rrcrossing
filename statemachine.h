@@ -12,8 +12,14 @@
 class StateMachine {
 public:
     StateMachine();
-    StateMachine(std::function<void(bool)> lightSwitch, std::function<void(bool)> gateControl);
+    StateMachine(std::function<void(bool)> lightSwitch, std::function<void(bool)> gateControl, std::function<void(bool)> semaphoreControl);
     ~StateMachine();
+
+    typedef enum COLORS:int {
+        red = 17,
+        green = 16,
+        blue = 25,
+    } colors;
 
     typedef enum DIRECTIONS:int {
         EAST = 0,
@@ -40,21 +46,25 @@ public:
         SIBLINGINACTIVE,
         RAISEGATE,
         GATERAISED,
-        LOWERGATEDONE,
+        LOWERGATE,
+        GATELOWERED,
     } events;
 
-    void setCallbacks(std::function<void(bool)> lightSwitch, std::function<void(bool)> gateControl);
+    void setCallbacks(std::function<void(bool)> lightSwitch, std::function<void(bool)> gateControl, std::function<void(bool)> semaphoreControl);
     void handleEvent(events event);
     bool stillActive();
     void setAlarmHandleValue(int32_t value);
+    void enableSemaphore() { m_semControl(true); }
 
 private:
     void turnOn();
     void turnOff();
     void raiseGate();
+    void setLedColor(bool red, bool green, bool blue);
 
     std::function<void(bool)> m_lightSwitch;
     std::function<void(bool)> m_gateControl;
+    std::function<void(bool)> m_semControl;
     states m_state;
     bool m_isActive;
     bool m_continueWaitingForExit;

@@ -5,7 +5,7 @@
 #include "Servo.h"
 #include "statemachine.h"
 
-#define APP_ID          13
+#define APP_ID          31
 
 #define SEMAPHORE       27
 #define SIBLING_ACTIVE        26
@@ -28,30 +28,15 @@
 #define SIG_RIGHT       2
 
 bool g_cancelSignals;
+bool g_localEvent;
 int g_whichSignal;
 int g_gateAngle;
 int g_gateTarget;
-Servo servo;
+Servo servo1;
+Servo servo2;
 repeating_timer_t g_activeSignalTimer;
 repeating_timer_t g_activeGateTimer;
 StateMachine sm;
-
-void set_led_color(bool r, bool g, bool b)
-{
-    gpio_put(LED_R, true);
-    gpio_put(LED_G, true);
-    gpio_put(LED_B, true);
-
-    if (r) {
-        gpio_put(LED_R, false);
-    }
-    if (b) {
-        gpio_put(LED_B, false);
-    }
-    if (g) {
-        gpio_put(LED_G, false);
-    }
-}
 
 bool signals_active(repeating_timer_t *rt)
 {
@@ -59,7 +44,6 @@ bool signals_active(repeating_timer_t *rt)
         g_cancelSignals = false;
         gpio_put(SIG_LEFT, false);
         gpio_put(SIG_RIGHT, false);
-        set_led_color(false, false, false);
         return false;
     }
 
@@ -82,12 +66,16 @@ void trigger_event(uint gpio, uint32_t event_mask)
 {
     switch (gpio) {
         case SENSOR_EAST_ENTRY:
-            if (event_mask == GPIO_IRQ_EDGE_RISE)
+            if (event_mask == GPIO_IRQ_EDGE_RISE) {
+                g_localEvent = true;
                 sm.handleEvent(StateMachine::events::EASTBOUND);
+            }
             break;
         case SENSOR_WEST_ENTRY:
-            if (event_mask == GPIO_IRQ_EDGE_RISE)
+            if (event_mask == GPIO_IRQ_EDGE_RISE) {
+                g_localEvent = true;
                 sm.handleEvent(StateMachine::events::WESTBOUND);
+            }
             break;
         case SENSOR_WEST_EXIT:
             if (event_mask == GPIO_IRQ_EDGE_FALL)
@@ -98,11 +86,13 @@ void trigger_event(uint gpio, uint32_t event_mask)
                 sm.handleEvent(StateMachine::events::LEAVINGEASTBOUND);
             break;
         case SIBLING_ACTIVE:
-            if (event_mask == GPIO_IRQ_EDGE_RISE) {
-                sm.handleEvent(StateMachine::events::SIBLINGACTIVE);
-            }
-            else {
-                sm.handleEvent(StateMachine::events::SIBLINGINACTIVE);
+            if (!g_localEvent) {
+                if (event_mask == GPIO_IRQ_EDGE_RISE) {
+                    sm.handleEvent(StateMachine::events::SIBLINGACTIVE);
+                }
+                else {
+                    sm.handleEvent(StateMachine::events::SIBLINGINACTIVE);
+                }
             }
             break;
     }
@@ -149,29 +139,29 @@ void setup_gpio()
     gpio_set_irq_enabled_with_callback(SENSOR_WEST_ENTRY, GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL, true, trigger_event);
     gpio_set_irq_enabled_with_callback(SIBLING_ACTIVE, GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL, true, trigger_event);
 
-    servo.attach(NORTH_GATE);
-    servo.write(GATE_DOWN);
+    servo1.attach(NORTH_GATE);
+    servo2.attach(SOUTH_GATE);
+    servo1.write(GATE_UP);
+    servo2.write(GATE_UP);
 }
 
 void led_control(bool state)
 {
-    printf("%s: state:%s\n", __PRETTY_FUNCTION__, state ? "true" : "false");
     if (state) {
         g_cancelSignals = false;
-        gpio_put(SEMAPHORE, true);
         add_repeating_timer_ms(1000, signals_active, NULL, &g_activeSignalTimer);
     }
     else {
         g_cancelSignals = true;
-        gpio_put(SEMAPHORE, false);
     }
 }
 
 bool gate_action(repeating_timer_t *rt)
 {
     if (g_gateTarget == GATE_UP) {
-        if (g_gateAngle <= GATE_UP) {
-            servo.write(++g_gateAngle);
+        if (++g_gateAngle <= GATE_UP) {
+            servo1.write(g_gateAngle);
+            servo2.write(g_gateAngle);
             return true;
         }
         else {
@@ -179,18 +169,33 @@ bool gate_action(repeating_timer_t *rt)
         }
     }
     else if (g_gateTarget == GATE_DOWN) {
-        if (g_gateAngle >= GATE_DOWN) {
-            servo.write(--g_gateAngle);
+        if (--g_gateAngle >= GATE_DOWN) {
+            servo1.write(g_gateAngle);
+            servo2.write(g_gateAngle);
             return true;
         }
+        else {
+            sm.handleEvent(StateMachine::events::GATELOWERED);
+        }
     }
+
+    if (g_gateAngle == GATE_DOWN - 1)
+        g_gateAngle = GATE_DOWN;
+
+    if (g_gateAngle == GATE_UP + 1)
+        g_gateAngle = GATE_UP;
 
     return false;
 }
 
-void gate_control(bool state)
+void semaphore_control(bool state)
 {
     printf("%s: state:%s\n", __PRETTY_FUNCTION__, state ? "true" : "false");
+    gpio_put(SEMAPHORE, state);
+}
+
+void gate_control(bool state)
+{
     if (state) {
         g_gateTarget = GATE_DOWN;
     }
@@ -203,17 +208,17 @@ void gate_control(bool state)
 int main() 
 {
     bool triggerEvent = false;
-    sm.setCallbacks(led_control, gate_control);
     stdio_init_all();
     sleep_ms(5000);
     setup_gpio();
-    set_led_color(false, false, false);
+    sm.setCallbacks(led_control, gate_control, semaphore_control);
     
     printf("Starting main for APP_ID: %d\n", APP_ID);
 
     g_whichSignal = SIG_LEFT;
     g_cancelSignals = false;
-    g_gateAngle = GATE_DOWN;
+    g_gateAngle = GATE_UP;
+    g_localEvent = false;
     alarm_pool_create(0, 2);
 
     while (1) {
