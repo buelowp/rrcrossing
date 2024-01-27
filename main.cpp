@@ -5,7 +5,7 @@
 #include "Servo.h"
 #include "statemachine.h"
 
-#define APP_ID          31
+#define APP_ID          32
 
 #define SEMAPHORE       27
 #define SIBLING_ACTIVE        26
@@ -213,7 +213,7 @@ int main()
     setup_gpio();
     sm.setCallbacks(led_control, gate_control, semaphore_control);
     
-    printf("Starting main for APP_ID: %d\n", APP_ID);
+    printf("%s: Starting main for APP_ID: %d\n", __PRETTY_FUNCTION__, APP_ID);
 
     g_whichSignal = SIG_LEFT;
     g_cancelSignals = false;

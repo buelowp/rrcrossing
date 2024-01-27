@@ -2,6 +2,7 @@
 
 static int64_t enable_semaphore(alarm_id_t id, void *user_data)
 {
+    printf("%s: Turning on Semaphore pin\n", __PRETTY_FUNCTION__);
     StateMachine *sm = (StateMachine*)user_data;
     sm->enableSemaphore();
     return 0;
@@ -11,7 +12,7 @@ static int64_t alarm_callback(alarm_id_t id, void *user_data)
 {
     StateMachine *sm = (StateMachine*)user_data;
 
-    printf("Handling alarm %d, and still active is %d\n", id, sm->stillActive());
+    printf("%s: Handling alarm %d, and still active is %d\n", __PRETTY_FUNCTION__, id, sm->stillActive());
     if (sm->stillActive()) {
         return ONE_SECOND;
     }
@@ -139,35 +140,41 @@ void StateMachine::handleEvent(events event)
             }
             break;
         case SIBLINGACTIVE:
-            printf("%s: SIBLINGACTIVE: state:%d, remote: %s\n", __PRETTY_FUNCTION__, m_state, m_remoteSensorActive ? "true" : "false");
+            printf("%s: SIBLINGACTIVE: state:%d, remote:%s\n", __PRETTY_FUNCTION__, m_state, m_remoteSensorActive ? "true" : "false");
+            m_remoteSensorActive = true;
             if (m_state == OFF) {
-                m_remoteSensorActive = true;
                 turnOn();
             }
             break;
         case LEAVINGEASTBOUND:
-            printf("%s: LEAVINGEASTBOUND: direction:%d, state:%d\n", __PRETTY_FUNCTION__, m_direction, m_state);
+            printf("%s: LEAVINGEASTBOUND: direction:%d, state:%d: sibling:%s\n", __PRETTY_FUNCTION__, m_direction, m_state, m_remoteSensorActive ? "true" : "false");
+            if (m_remoteSensorActive) 
+                break;
+
             if (m_direction == EAST && m_state == ON) {
                 if (m_endAlarm == INVALID_ALARM) {
                     m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
                 }
                 else {
                     if (cancel_alarm(m_endAlarm)) {
-                        printf("%s: Canceling alarm %d\n", m_endAlarm);
+                        printf("%s: Canceled alarm %d\n", m_endAlarm);
                         m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
                     }
                 }
             }
             break;
         case LEAVINGWESTBOUND:
-            printf("%s: LEAVINGWESTBOUND: direction:%d, state:%d\n", __PRETTY_FUNCTION__, m_direction, m_state);
+            printf("%s: LEAVINGWESTBOUND: direction:%d, state:%d: sibling:%s\n", __PRETTY_FUNCTION__, m_direction, m_state, m_remoteSensorActive ? "true" : "false");
+            if (m_remoteSensorActive)
+                break;
+
             if (m_direction == WEST && m_state == ON) {
                 if (m_endAlarm == INVALID_ALARM) {
                     m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
                 }
                 else {
                     if (cancel_alarm(m_endAlarm)) {
-                        printf("%s: Canceling alarm %d\n", __PRETTY_FUNCTION__, m_endAlarm);
+                        printf("%s: Canceled alarm %d\n", __PRETTY_FUNCTION__, m_endAlarm);
                         m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
                     }
                 }
