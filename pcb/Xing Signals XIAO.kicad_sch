@@ -2366,7 +2366,7 @@
   )
 
   (symbol (lib_id "Device:C_Polarized_US") (at 224.79 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 04ca52f7-30f1-4d5a-87be-58bd20b3b74d)
     (property "Reference" "C1" (at 219.71 33.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2395,7 +2395,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x03_Pin") (at 254 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 051afa07-0802-4565-b3eb-00e542fe168a)
     (property "Reference" "J10" (at 254 110.49 90)
       (effects (font (size 1.27 1.27)))
@@ -2776,7 +2776,7 @@
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 17.78 140.97 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 3494f743-6a38-4ec1-8f0f-b9fba9532d21)
     (property "Reference" "J8" (at 17.78 133.35 0)
       (effects (font (size 1.27 1.27)))
@@ -3073,7 +3073,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x03_Pin") (at 173.99 140.97 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5d95670d-4c78-4f57-b818-4bc28a2375d3)
     (property "Reference" "J3" (at 173.99 143.51 90)
       (effects (font (size 1.27 1.27)))
@@ -3100,7 +3100,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x07_Pin") (at 76.2 53.34 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5f7af370-c845-4e99-b82c-9e0ecf9403cb)
     (property "Reference" "J9" (at 77.47 52.705 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3182,7 +3182,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_02x03_Top_Bottom") (at 245.11 139.7 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6aeb0f16-2038-4ee2-a0df-b1128f3b8e2c)
     (property "Reference" "J4" (at 250.19 137.16 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3196,12 +3196,12 @@
     (property "Datasheet" "~" (at 245.11 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 86a4da1c-fdca-4d74-b98c-51307546bd74))
-    (pin "2" (uuid 8181ae9e-82e4-45f1-8a87-f0b303438818))
-    (pin "3" (uuid 148ba8b8-a288-45cf-a03c-540c3a64c1a1))
-    (pin "4" (uuid 14638689-4467-4ae5-ba60-01ba864036a9))
-    (pin "5" (uuid 08c43e83-09ff-4c92-9391-9bba39ecf59c))
-    (pin "6" (uuid 733538d8-0a37-4471-855a-ef22e301c70c))
+    (pin "1" (uuid 046b998d-8a7f-43f1-a6d8-ef7b1b9a9ced))
+    (pin "2" (uuid 56f03c49-7594-4e03-837f-cf374d4a45b7))
+    (pin "3" (uuid 7119fd7b-ef87-4ef5-87e9-9653addd62a3))
+    (pin "4" (uuid 51fcc8b7-dc56-4b60-9f24-05546344211a))
+    (pin "5" (uuid e105ba88-5e5a-4067-a79d-14de07a6c6a5))
+    (pin "6" (uuid 8ccb743d-ac82-4d3a-8216-d734d9af0cb8))
     (instances
       (project "Xing Signals XIAO"
         (path "/1e761e62-995e-4cf3-b10a-8e152dd71096"
@@ -3706,7 +3706,7 @@
   )
 
   (symbol (lib_id "Connector:Barrel_Jack_Switch") (at 148.59 44.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7f68e94-5144-4c9c-a994-3a471fe9cd32)
     (property "Reference" "J1" (at 148.59 35.56 0)
       (effects (font (size 1.27 1.27)))
@@ -4276,7 +4276,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x07_Pin") (at 93.98 53.34 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid f73c8c9b-e4a3-4bb1-a6b1-80ddac4e27b3)
     (property "Reference" "J6" (at 94.615 41.91 0)
       (effects (font (size 1.27 1.27)))
