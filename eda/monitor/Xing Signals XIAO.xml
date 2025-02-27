@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/pete/Projects/kicad/MRR/Xing Signals XIAO/Xing Signals XIAO.kicad_sch</source>
+    <date>Sun 29 Oct 2023 03:24:01 PM CDT</date>
+    <tool>Eeschema 7.0.2-6a45011f42~172~ubuntu22.10.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Xing Signals XIAO.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C2">
+      <value>220pf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C1603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB" value="C1603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dff475ef-bf79-4f12-a702-b55f2a7d8c16</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>Yellow</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19582def-7525-4451-a0c4-f2127d6e7bb6</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>Yellow</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e84fc5f-c368-476f-95c7-df030ee1e388</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>Yellow</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46be6d6e-6c99-4c35-b6e7-508fde896023</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>Yellow</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>409a78d4-7b25-4b53-8708-fd9448e39531</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>Red</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8e1f240-20df-4976-bbda-572a6fa327c7</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>Red</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70d30b3e-4bf9-4f95-87e0-c28c5a9e2680</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>D_Schottky</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <fields>
+        <field name="JLCPCB">C191023</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="JLCPCB" value="C191023"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3baa262e-8955-4b90-a6b2-015012199a51</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>D_Schottky</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <fields>
+        <field name="JLCPCB">C191023</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="JLCPCB" value="C191023"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab72f4b4-af8e-455e-b9da-846d9e3b7806</tstamps>
+    </comp>
+    <comp ref="D10">
+      <value>MDB10S</value>
+      <footprint>Package_SO:TSSOP-4_4.4x5mm_P4mm</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/MDB8S-D.PDF</datasheet>
+      <fields>
+        <field name="JLCPCB">C5377</field>
+      </fields>
+      <libsource lib="Diode_Bridge" part="MDB10S" description="Single-Phase Bridge Rectifier, 700V Vrms, 1A If, TSSOP-4"/>
+      <property name="JLCPCB" value="C5377"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Single-Phase Bridge Rectifier, 700V Vrms, 1A If, TSSOP-4"/>
+      <property name="ki_keywords" value="bridge diode rectifier ac dc acdc ac-dc"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f24e09e1-5c52-4f3c-b328-7de8e3d3be15</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>12V IN</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ccf16a4-db96-43cd-8b4e-a4d86911dab2</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>DCC IN</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ce1dd09-516a-466b-a821-6b7ae811ad81</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Signals</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d95670d-4c78-4f57-b818-4bc28a2375d3</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Signal Gate 1</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5cff10bb-8288-4ade-ad94-deb8824fb9b7</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Signal Gate 2</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc2da464-95ab-446c-b6ba-dd10bbe22b75</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Detect</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x04_Pin" description="Generic connector, single row, 01x04, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x04, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a84d1f4-0979-4dd0-af01-a069fcd393e8</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Sensor Power</value>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>639cc69b-6ae9-4349-984d-981a0f9d8499</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>MMBT2222ALT1G</value>
+      <footprint>MMBT2222ALT1G:SOT95P237X111-3N</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=eda</field>
+        <field name="Description">
+Bipolar (BJT) Transistor NPN 40 V 600 mA 300MHz 225 mW Surface Mount SOT-23-3 (TO-236)
+</field>
+        <field name="JLCPCB">C82460</field>
+        <field name="MANUFACTURER">ON Semiconductor</field>
+        <field name="MF">onsemi</field>
+        <field name="MP">MMBT2222ALT1G</field>
+        <field name="PARTREV">11</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7122310&amp;manufacturer=onsemi&amp;part_name=MMBT2222ALT1G&amp;search_term=mmbt2222alt1g</field>
+        <field name="STANDARD">IPC-7351B</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="MMBT2222ALT1G" part="MMBT2222ALT1G" description=""/>
+      <property name="MF" value="onsemi"/>
+      <property name="Description" value="&#xA;Bipolar (BJT) Transistor NPN 40 V 600 mA 300MHz 225 mW Surface Mount SOT-23-3 (TO-236)&#xA;"/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=eda"/>
+      <property name="STANDARD" value="IPC-7351B"/>
+      <property name="PARTREV" value="11"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=snap"/>
+      <property name="MP" value="MMBT2222ALT1G"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7122310&amp;manufacturer=onsemi&amp;part_name=MMBT2222ALT1G&amp;search_term=mmbt2222alt1g"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="MANUFACTURER" value="ON Semiconductor"/>
+      <property name="JLCPCB" value="C82460"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e50b007f-d13f-4920-8215-7f2ac3caa652</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>MMBT2222ALT1G</value>
+      <footprint>MMBT2222ALT1G:SOT95P237X111-3N</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=eda</field>
+        <field name="Description">
+Bipolar (BJT) Transistor NPN 40 V 600 mA 300MHz 225 mW Surface Mount SOT-23-3 (TO-236)
+</field>
+        <field name="JLCPCB">C82460</field>
+        <field name="MANUFACTURER">ON Semiconductor</field>
+        <field name="MF">onsemi</field>
+        <field name="MP">MMBT2222ALT1G</field>
+        <field name="PARTREV">11</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7122310&amp;manufacturer=onsemi&amp;part_name=MMBT2222ALT1G&amp;search_term=mmbt2222alt1g</field>
+        <field name="STANDARD">IPC-7351B</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="MMBT2222ALT1G" part="MMBT2222ALT1G" description=""/>
+      <property name="MF" value="onsemi"/>
+      <property name="Description" value="&#xA;Bipolar (BJT) Transistor NPN 40 V 600 mA 300MHz 225 mW Surface Mount SOT-23-3 (TO-236)&#xA;"/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=eda"/>
+      <property name="STANDARD" value="IPC-7351B"/>
+      <property name="PARTREV" value="11"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=snap"/>
+      <property name="MP" value="MMBT2222ALT1G"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7122310&amp;manufacturer=onsemi&amp;part_name=MMBT2222ALT1G&amp;search_term=mmbt2222alt1g"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="MANUFACTURER" value="ON Semiconductor"/>
+      <property name="JLCPCB" value="C82460"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72bff5bd-399b-4a99-8a0a-e4d1ed0f5d1c</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100ohm</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a6ab12f-fda2-47c2-8c38-a0bdadbc7711</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>75</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C4275</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB" value="C4275"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ff41e25-825e-4557-adf2-cefcf921be0c</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>75</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C4275</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB" value="C4275"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>955bd037-7f3d-4ffd-81fc-7c455fd15e4f</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C105637</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="J" value=""/>
+      <property name="JLCPCB" value="C105637"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aad62f5d-1e4a-4400-b509-92c351f81e83</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C105637</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB" value="C105637"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2fe7499b-2619-4f44-87ec-5bbcf6289829</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C60490</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB" value="C60490"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3fff67fd-e69a-4d2e-b839-df10445b6eab</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C60490</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB" value="C60490"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58638d4b-dc44-4779-8922-745136a0ca18</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C60490</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB" value="C60490"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c168577-e8ec-4e57-b256-ad0d545b170c</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C60490</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB" value="C60490"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d777d299-4c5c-4085-a939-bbc93c68c898</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_2.0x2.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>354c1dd4-ab05-488e-b6c6-6a3bf484348c</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56d7e3ff-7858-4ef8-941b-0d04e72e6a62</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b2ede242-78bb-4d17-8a84-c56fe69c0bea</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>SN74LVC1G14DBV</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB">C7835</field>
+      </fields>
+      <libsource lib="74xGxx" part="SN74LVC1G14DBV" description="Single Schmitt-Trigger Inverter, SOT-23"/>
+      <property name="JLCPCB" value="C7835"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Single Schmitt-Trigger Inverter, SOT-23"/>
+      <property name="ki_keywords" value="Inverter Schmitt Trigger"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5afc984c-7b2a-4bc4-bef3-63401908e6a0</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>MMBT2907AT-7-F</value>
+      <footprint>MMBT2907AT-7-F:SOT65P210X110-3N</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda</field>
+        <field name="Description">
+Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F
+</field>
+        <field name="JLCPCB">C154716</field>
+        <field name="MF">Diodes Inc.</field>
+        <field name="MP">MMBT2907AT-7-F</field>
+        <field name="MPN">MMBT2907AT-7-F</field>
+        <field name="OC_FARNELL">1773614</field>
+        <field name="OC_NEWARK">51R6812</field>
+        <field name="PACKAGE">SOT-523-3</field>
+        <field name="Package">SOT-523 Diodes Inc.</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f</field>
+        <field name="SUPPLIER">Diodes Inc</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="MMBT2907AT-7-F" part="MMBT2907AT-7-F" description=""/>
+      <property name="MF" value="Diodes Inc."/>
+      <property name="Description" value="&#xA;Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F&#xA;"/>
+      <property name="PACKAGE" value="SOT-523-3"/>
+      <property name="MPN" value="MMBT2907AT-7-F"/>
+      <property name="Price" value="None"/>
+      <property name="Package" value="SOT-523 Diodes Inc."/>
+      <property name="OC_FARNELL" value="1773614"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap"/>
+      <property name="MP" value="MMBT2907AT-7-F"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f"/>
+      <property name="SUPPLIER" value="Diodes Inc"/>
+      <property name="OC_NEWARK" value="51R6812"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda"/>
+      <property name="JLCPCB" value="C154716"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e6441b1-4943-4f32-944f-184376cea6e5</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>MMBT2907AT-7-F</value>
+      <footprint>MMBT2907AT-7-F:SOT65P210X110-3N</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda</field>
+        <field name="Description">
+Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F
+</field>
+        <field name="JLCPCB">C154716</field>
+        <field name="MF">Diodes Inc.</field>
+        <field name="MP">MMBT2907AT-7-F</field>
+        <field name="MPN">MMBT2907AT-7-F</field>
+        <field name="OC_FARNELL">1773614</field>
+        <field name="OC_NEWARK">51R6812</field>
+        <field name="PACKAGE">SOT-523-3</field>
+        <field name="Package">SOT-523 Diodes Inc.</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f</field>
+        <field name="SUPPLIER">Diodes Inc</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="MMBT2907AT-7-F" part="MMBT2907AT-7-F" description=""/>
+      <property name="MF" value="Diodes Inc."/>
+      <property name="Description" value="&#xA;Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F&#xA;"/>
+      <property name="PACKAGE" value="SOT-523-3"/>
+      <property name="MPN" value="MMBT2907AT-7-F"/>
+      <property name="Price" value="None"/>
+      <property name="Package" value="SOT-523 Diodes Inc."/>
+      <property name="OC_FARNELL" value="1773614"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap"/>
+      <property name="MP" value="MMBT2907AT-7-F"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f"/>
+      <property name="SUPPLIER" value="Diodes Inc"/>
+      <property name="OC_NEWARK" value="51R6812"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda"/>
+      <property name="JLCPCB" value="C154716"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d3f8b22b-2d3c-4109-b28d-99a407a30779</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>MMBT2907AT-7-F</value>
+      <footprint>MMBT2907AT-7-F:SOT65P210X110-3N</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda</field>
+        <field name="Description">
+Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F
+</field>
+        <field name="JLCPCB">C154716</field>
+        <field name="MF">Diodes Inc.</field>
+        <field name="MP">MMBT2907AT-7-F</field>
+        <field name="MPN">MMBT2907AT-7-F</field>
+        <field name="OC_FARNELL">1773614</field>
+        <field name="OC_NEWARK">51R6812</field>
+        <field name="PACKAGE">SOT-523-3</field>
+        <field name="Package">SOT-523 Diodes Inc.</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f</field>
+        <field name="SUPPLIER">Diodes Inc</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="MMBT2907AT-7-F" part="MMBT2907AT-7-F" description=""/>
+      <property name="MF" value="Diodes Inc."/>
+      <property name="Description" value="&#xA;Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F&#xA;"/>
+      <property name="PACKAGE" value="SOT-523-3"/>
+      <property name="MPN" value="MMBT2907AT-7-F"/>
+      <property name="Price" value="None"/>
+      <property name="Package" value="SOT-523 Diodes Inc."/>
+      <property name="OC_FARNELL" value="1773614"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap"/>
+      <property name="MP" value="MMBT2907AT-7-F"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f"/>
+      <property name="SUPPLIER" value="Diodes Inc"/>
+      <property name="OC_NEWARK" value="51R6812"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda"/>
+      <property name="JLCPCB" value="C154716"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69dfcd08-5aae-48eb-a3fb-90690e9c3a79</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>MMBT2907AT-7-F</value>
+      <footprint>MMBT2907AT-7-F:SOT65P210X110-3N</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda</field>
+        <field name="Description">
+Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F
+</field>
+        <field name="JLCPCB">C154716</field>
+        <field name="MF">Diodes Inc.</field>
+        <field name="MP">MMBT2907AT-7-F</field>
+        <field name="MPN">MMBT2907AT-7-F</field>
+        <field name="OC_FARNELL">1773614</field>
+        <field name="OC_NEWARK">51R6812</field>
+        <field name="PACKAGE">SOT-523-3</field>
+        <field name="Package">SOT-523 Diodes Inc.</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f</field>
+        <field name="SUPPLIER">Diodes Inc</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="MMBT2907AT-7-F" part="MMBT2907AT-7-F" description=""/>
+      <property name="MF" value="Diodes Inc."/>
+      <property name="Description" value="&#xA;Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F&#xA;"/>
+      <property name="PACKAGE" value="SOT-523-3"/>
+      <property name="MPN" value="MMBT2907AT-7-F"/>
+      <property name="Price" value="None"/>
+      <property name="Package" value="SOT-523 Diodes Inc."/>
+      <property name="OC_FARNELL" value="1773614"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap"/>
+      <property name="MP" value="MMBT2907AT-7-F"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f"/>
+      <property name="SUPPLIER" value="Diodes Inc"/>
+      <property name="OC_NEWARK" value="51R6812"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda"/>
+      <property name="JLCPCB" value="C154716"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a966a2be-703a-4df6-a0fa-3cb032c4de57</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>102010388</value>
+      <footprint>102010388:MODULE_102010388</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/102010388/Techno/view-part/?ref=eda</field>
+        <field name="Description">
+XIAO BOARD, ARM, ARDUINO BOARD; Silicon Manufacturer:Microchip; Core Architecture:ARM; Core Sub-Architecture:Cortex-M0+; Silicon Core Number:SAMD21G18; Silicon Family Name:SAMD21; For Use With:Arduino Board; Product Range:-
+</field>
+        <field name="MANUFACTURER">Seeed Technology</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">N/A</field>
+        <field name="MF">seeed technology limited</field>
+        <field name="MP">102010388</field>
+        <field name="PARTREV">N/A</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7601082&amp;manufacturer=seeed technology limited&amp;part_name=102010388&amp;search_term=xiao</field>
+        <field name="SNAPEDA_PN">102010388</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/102010388/Techno/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="102010388" part="102010388" description=""/>
+      <property name="MF" value="seeed technology limited"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="N/A"/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/102010388/Techno/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="N/A"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/102010388/Techno/view-part/?ref=snap"/>
+      <property name="MP" value="102010388"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7601082&amp;manufacturer=seeed technology limited&amp;part_name=102010388&amp;search_term=xiao"/>
+      <property name="Description" value="&#xA;XIAO BOARD, ARM, ARDUINO BOARD; Silicon Manufacturer:Microchip; Core Architecture:ARM; Core Sub-Architecture:Cortex-M0+; Silicon Core Number:SAMD21G18; Silicon Family Name:SAMD21; For Use With:Arduino Board; Product Range:-&#xA;"/>
+      <property name="MANUFACTURER" value="Seeed Technology"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="SNAPEDA_PN" value="102010388"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da7dabf7-a9d2-484e-8394-27c291e685b6</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>LM7805SX_NOPB</value>
+      <footprint>LM7805SX_NOPB:TO254P1524X483-4N</footprint>
+      <fields>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">URL</field>
+        <field name="Description">
+1.5-A, 30-V, linear voltage regulator
+</field>
+        <field name="JLCPDB">C2863046</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="MP">LM7805SX/NOPB</field>
+        <field name="Package">TO263-3 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="Purchase-URL">URL</field>
+        <field name="SnapEDA_Link">URL</field>
+      </fields>
+      <libsource lib="LM7805SX_NOPB" part="LM7805SX_NOPB" description=""/>
+      <property name="MF" value="Texas Instruments"/>
+      <property name="Description" value="&#xA;1.5-A, 30-V, linear voltage regulator&#xA;"/>
+      <property name="Package" value="TO263-3 Texas Instruments"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="URL"/>
+      <property name="MP" value="LM7805SX/NOPB"/>
+      <property name="Purchase-URL" value="URL"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="URL"/>
+      <property name="JLCPDB" value="C2863046"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>378d7cce-0308-4274-a178-329b29638ef1</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>SN74LVC1G14DBV</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB">C7835</field>
+      </fields>
+      <libsource lib="74xGxx" part="SN74LVC1G14DBV" description="Single Schmitt-Trigger Inverter, SOT-23"/>
+      <property name="JLCPCB" value="C7835"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Xing Signals XIAO.kicad_sch"/>
+      <property name="ki_description" value="Single Schmitt-Trigger Inverter, SOT-23"/>
+      <property name="ki_keywords" value="Inverter Schmitt Trigger"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1850122b-18a0-464e-961b-236b4f731e86</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="102010388" part="102010388">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">102010388</field>
+        <field name="Footprint">102010388:MODULE_102010388</field>
+        <field name="MF">seeed technology limited</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">N/A</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/102010388/Techno/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">N/A</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/102010388/Techno/view-part/?ref=snap</field>
+        <field name="MP">102010388</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7601082&amp;manufacturer=seeed technology limited&amp;part_name=102010388&amp;search_term=xiao</field>
+        <field name="Description">
+XIAO BOARD, ARM, ARDUINO BOARD; Silicon Manufacturer:Microchip; Core Architecture:ARM; Core Sub-Architecture:Cortex-M0+; Silicon Core Number:SAMD21G18; Silicon Family Name:SAMD21; For Use With:Arduino Board; Product Range:-
+</field>
+        <field name="MANUFACTURER">Seeed Technology</field>
+        <field name="Availability">In Stock</field>
+        <field name="SNAPEDA_PN">102010388</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PA02_A0_D0" type="bidirectional"/>
+        <pin num="2" name="PA4_A1_D1" type="bidirectional"/>
+        <pin num="3" name="PA10_A2_D2" type="bidirectional"/>
+        <pin num="4" name="PA11_A3_D3" type="bidirectional"/>
+        <pin num="5" name="PA8_A4_D4_SDA" type="bidirectional"/>
+        <pin num="6" name="PA9_A5_D5_SCL" type="bidirectional"/>
+        <pin num="7" name="PB08_A6_D6_TX" type="bidirectional"/>
+        <pin num="8" name="PB09_A7_D7_RX" type="bidirectional"/>
+        <pin num="9" name="PA7_A8_D8_SCK" type="bidirectional"/>
+        <pin num="10" name="PA5_A9_D9_MISO" type="bidirectional"/>
+        <pin num="11" name="PA6_A10_D10_MOSI" type="bidirectional"/>
+        <pin num="12" name="3V3" type="power_in"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="5V" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xGxx" part="SN74LVC1G14DBV">
+      <description>Single Schmitt-Trigger Inverter, SOT-23</description>
+      <docs>http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1G14DBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Pin">
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Pin">
+      <description>Generic connector, single row, 01x03, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x04_Pin">
+      <description>Generic connector, single row, 01x04, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode_Bridge" part="MDB10S">
+      <description>Single-Phase Bridge Rectifier, 700V Vrms, 1A If, TSSOP-4</description>
+      <docs>https://www.onsemi.com/pub/Collateral/MDB8S-D.PDF</docs>
+      <footprints>
+        <fp>TSSOP*4.4x5mm*P4mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MDB10S</field>
+        <field name="Footprint">Package_SO:TSSOP-4_4.4x5mm_P4mm</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/MDB8S-D.PDF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LM7805SX_NOPB" part="LM7805SX_NOPB">
+      <fields>
+        <field name="Reference">U7</field>
+        <field name="Value">LM7805SX_NOPB</field>
+        <field name="Footprint">LM7805SX_NOPB:TO254P1524X483-4N</field>
+        <field name="Description">
+1.5-A, 30-V, linear voltage regulator
+</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="Package">TO263-3 Texas Instruments</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">URL</field>
+        <field name="MP">LM7805SX/NOPB</field>
+        <field name="Purchase-URL">URL</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">URL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="+5V" type="power_out"/>
+        <pin num="4" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MMBT2222ALT1G" part="MMBT2222ALT1G">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MMBT2222ALT1G</field>
+        <field name="Footprint">MMBT2222ALT1G:SOT95P237X111-3N</field>
+        <field name="MF">onsemi</field>
+        <field name="Description">
+Bipolar (BJT) Transistor NPN 40 V 600 mA 300MHz 225 mW Surface Mount SOT-23-3 (TO-236)
+</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=eda</field>
+        <field name="STANDARD">IPC-7351B</field>
+        <field name="PARTREV">11</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MMBT2222ALT1G/Onsemi/view-part/?ref=snap</field>
+        <field name="MP">MMBT2222ALT1G</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=7122310&amp;manufacturer=onsemi&amp;part_name=MMBT2222ALT1G&amp;search_term=mmbt2222alt1g</field>
+        <field name="Availability">In Stock</field>
+        <field name="MANUFACTURER">ON Semiconductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MMBT2907AT-7-F" part="MMBT2907AT-7-F">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MMBT2907AT-7-F</field>
+        <field name="Footprint">MMBT2907AT-7-F:SOT65P210X110-3N</field>
+        <field name="MF">Diodes Inc.</field>
+        <field name="Description">
+Transistor PNP 60V 0.6A SOT523 | Diodes Inc MMBT2907AT-7-F
+</field>
+        <field name="PACKAGE">SOT-523-3</field>
+        <field name="MPN">MMBT2907AT-7-F</field>
+        <field name="Price">None</field>
+        <field name="Package">SOT-523 Diodes Inc.</field>
+        <field name="OC_FARNELL">1773614</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=snap</field>
+        <field name="MP">MMBT2907AT-7-F</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=378370&amp;manufacturer=Diodes Inc.&amp;part_name=MMBT2907AT-7-F&amp;search_term=    mmbt2907at-7-f</field>
+        <field name="SUPPLIER">Diodes Inc</field>
+        <field name="OC_NEWARK">51R6812</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MMBT2907AT-7-F/Diodes+Inc./view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="passive"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="102010388">
+      <uri>/home/pete/Projects/kicad/libraries/XIAO/102010388.kicad_sym</uri>
+    </library>
+    <library logical="74xGxx">
+      <uri>/usr/share/kicad/symbols//74xGxx.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode_Bridge">
+      <uri>/usr/share/kicad/symbols//Diode_Bridge.kicad_sym</uri>
+    </library>
+    <library logical="LM7805SX_NOPB">
+      <uri>/home/pete/Projects/kicad/libraries/LM7805SX/LM7805SX_NOPB.kicad_sym</uri>
+    </library>
+    <library logical="MMBT2222ALT1G">
+      <uri>/home/pete/Projects/kicad/libraries/MMBT2222ALT1G/MMBT2222ALT1G.kicad_sym</uri>
+    </library>
+    <library logical="MMBT2907AT-7-F">
+      <uri>/home/pete/Projects/kicad/libraries/MMBT2907AT-7-F.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V">
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="2" name="+3V3">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="3V3" pintype="power_in"/>
+    </net>
+    <net code="3" name="+5V">
+      <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U7" pin="3" pinfunction="+5V" pintype="power_out"/>
+      <node ref="U8" pin="5" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="4" name="+12V">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="D10" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="IN" pintype="input"/>
+    </net>
+    <net code="5" name="DETECT1">
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="B" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="PA02_A0_D0" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="DETECT2">
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="B" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="PA4_A1_D1" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="DETECT3">
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="B" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="PA10_A2_D2" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="DETECT4">
+      <node ref="J6" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="B" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="PA11_A3_D3" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="GATE1">
+      <node ref="U1" pin="2" pintype="input"/>
+      <node ref="U6" pin="5" pinfunction="PA8_A4_D4_SDA" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="GATE2">
+      <node ref="U6" pin="6" pinfunction="PA9_A5_D5_SCL" pintype="bidirectional"/>
+      <node ref="U8" pin="2" pintype="input"/>
+    </net>
+    <net code="11" name="GND">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="D10" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Q1" pin="2" pintype="passive"/>
+      <node ref="Q2" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="U6" pin="13" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="3" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="12" name="Net-(D1-A)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(D1-K)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(D3-K)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(D4-K)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(D5-A)">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(D5-K)">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(D6-A)">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(D6-K)">
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Q2" pin="3" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(D8-A)">
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(D9-K)">
+      <node ref="D9" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U6" pin="14" pinfunction="5V" pintype="power_in"/>
+    </net>
+    <net code="23" name="Net-(J2-Pin_1)">
+      <node ref="D10" pin="3" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(J2-Pin_2)">
+      <node ref="D10" pin="4" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(J4-Pin_3)">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="4" pintype="output"/>
+    </net>
+    <net code="26" name="Net-(J5-Pin_3)">
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U8" pin="4" pintype="output"/>
+    </net>
+    <net code="27" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(Q2-Pad1)">
+      <node ref="Q2" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="29" name="SIGLEFT">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="PB09_A7_D7_RX" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="SIGRIGHT">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U6" pin="9" pinfunction="PA7_A8_D8_SCK" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="unconnected-(U1-NC-Pad1)">
+      <node ref="U1" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U6-PA5_A9_D9_MISO-Pad10)">
+      <node ref="U6" pin="10" pinfunction="PA5_A9_D9_MISO" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U6-PA6_A10_D10_MOSI-Pad11)">
+      <node ref="U6" pin="11" pinfunction="PA6_A10_D10_MOSI" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U6-PB08_A6_D6_TX-Pad7)">
+      <node ref="U6" pin="7" pinfunction="PB08_A6_D6_TX" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U8-NC-Pad1)">
+      <node ref="U8" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

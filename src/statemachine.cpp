@@ -32,6 +32,7 @@ StateMachine::StateMachine()
     m_endAlarm = INVALID_ALARM;
     m_continueWaitingForExit = false;
     setLedColor(false, false, false);
+    m_disabled = false;
 }
 
 StateMachine::StateMachine(std::function<void(bool)> lightSwitch, std::function<void(bool)> gateControl, std::function<void(bool)> semaphoreControl)
@@ -52,6 +53,7 @@ StateMachine::StateMachine(std::function<void(bool)> lightSwitch, std::function<
     m_endAlarm = INVALID_ALARM;
     m_continueWaitingForExit = false;
     setLedColor(false, false, false);
+    m_disabled = false;
 }
 
 StateMachine::~StateMachine()
@@ -122,6 +124,10 @@ void StateMachine::turnOff()
 
 void StateMachine::handleEvent(events event)
 {
+    if (m_disabled) {
+        return;
+    }
+
     switch (event) {
         case EASTBOUND:
             printf("%s: EASTBOUND: %d\n", __PRETTY_FUNCTION__, m_state);
@@ -152,15 +158,12 @@ void StateMachine::handleEvent(events event)
                 break;
 
             if (m_direction == EAST && m_state == ON) {
-                if (m_endAlarm == INVALID_ALARM) {
-                    m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
-                }
-                else {
+                if (m_endAlarm != INVALID_ALARM) {
                     if (cancel_alarm(m_endAlarm)) {
                         printf("%s: Canceled alarm %d\n", m_endAlarm);
-                        m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
                     }
                 }
+                m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
             }
             break;
         case LEAVINGWESTBOUND:
@@ -169,15 +172,13 @@ void StateMachine::handleEvent(events event)
                 break;
 
             if (m_direction == WEST && m_state == ON) {
-                if (m_endAlarm == INVALID_ALARM) {
-                    m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
-                }
-                else {
+                if (m_endAlarm != INVALID_ALARM) {
                     if (cancel_alarm(m_endAlarm)) {
                         printf("%s: Canceled alarm %d\n", __PRETTY_FUNCTION__, m_endAlarm);
                         m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
                     }
                 }
+                m_endAlarm = add_alarm_in_us(FIVE_SECONDS, alarm_callback, (void*)this, true);
             }
             break;
         case SIBLINGINACTIVE:

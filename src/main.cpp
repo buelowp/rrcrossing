@@ -5,7 +5,7 @@
 #include "Servo.h"
 #include "statemachine.h"
 
-#define APP_ID          32
+#define APP_ID          33
 
 #define SEMAPHORE       27
 #define SIBLING_ACTIVE        26
@@ -196,6 +196,8 @@ void semaphore_control(bool state)
 
 void gate_control(bool state)
 {
+    printf("%s: Setting target to %d\n", state);
+
     if (state) {
         g_gateTarget = GATE_DOWN;
     }

@@ -68,6 +68,7 @@ private:
     states m_state;
     bool m_isActive;
     bool m_continueWaitingForExit;
+    bool m_disabled;
     directions m_direction;
     bool m_localSensorActive;
     bool m_remoteSensorActive;
